@@ -1,0 +1,60 @@
+---
+title: "ConflictChain"
+subtitle: "Mapping Supply Chains for a Transparent Future"
+author: "ConflictChain Consortium"
+date: "April 2025"
+output: ioslides_presentation
+---
+
+## Introduction: The Challenge of Opacity
+
+- Global supply chains often span dozens of countries and suppliers, making product origins hard to trace.
+- Critical raw materials (tin, tantalum, tungsten, gold) frequently come from conflict zones where forced labor funds armed groups&#8203;:contentReference[oaicite:0]{index=0}.
+- This opacity leads to legal, ethical, and financial risks for companies, especially under strict due-diligence laws.
+- Consumers and investors now demand transparency and accountability in sourcing.
+
+## What is ConflictChain?
+
+- A digital platform for end-to-end supply chain mapping and provenance tracking.
+- Leverages a permissioned blockchain to record transactions immutably and provide an auditable trail.
+- Integrates data from manufacturers, suppliers, auditors, and NGOs into a unified ledger.
+- Focuses on traceability of high-risk materials (e.g. minerals, electronic components).
+
+## How does ConflictChain work?
+
+- Suppliers report material movements, certifications, and test results; data is encrypted and uploaded to the network.
+- Each transaction triggers a smart contract to validate data format and compliance with standards.
+- The blockchain ledger stores tamper-proof provenance records; analytics dashboards visualize supply paths.
+- Authorized users can query product history, verify origin certificates, and receive alerts on anomalies.
+
+## Are you sure? (Evidence and Drivers)
+
+- Regulatory requirements: US Dodd-Frank Act (2010) forces public companies to report use of conflict minerals (tin, tantalum, tungsten, gold)&#8203;:contentReference[oaicite:1]{index=1}; EU Conflict Minerals Regulation (2021) mandates sourcing from conflict-free sources&#8203;:contentReference[oaicite:2]{index=2}.
+- Market demands: Major electronics and automotive firms require certified supply chains; NGO investigations frequently uncover undisclosed risks.
+- Transparency gap: Industry reports indicate only a minority of companies can fully trace raw materials, underscoring unmet need.
+- Trust through data: Immutable records and third-party audits build assurance for regulators, buyers, and communities.
+
+## Can you do it? (Technical Plan)
+
+- Team with domain expertise: supply-chain engineers, blockchain developers, data scientists and legal advisors.
+- Technology approach: Build on existing frameworks (e.g. Hyperledger) and open data standards (e.g. GS1, ISO 8000) for interoperability.
+- Development roadmap:
+  1. Q2 2025: Platform architecture and prototype (data model, smart contracts, UI).
+  2. Q3 2025: Pilot launch with selected suppliers (electronic components, minerals) for live testing.
+  3. Q4 2025: Full platform release and partnership expansion; incorporate feedback and scaling.
+- Collaboration: Engage industry consortiums and NGOs to source data and refine use cases; adapt to regulatory updates.
+
+## What do you want? (Call to Action)
+
+- **Industry Partners:** Manufacturers, mining companies, and certification bodies to join pilot projects and share supply data.
+- **Data and Standards:** Organizations to align on data models and help verify material provenance.
+- **Investors and Funders:** Support development costs and incentivize growth; enable rapid scaling to global networks.
+- **Policymakers and NGOs:** Collaborate on best practices, compliance support, and expanding transparency frameworks.
+
+## Contact
+
+ConflictChain Consortium  
+Email: info@conflictchain.org  
+Website: [www.conflictchain.org](https://www.conflictchain.org)  
+LinkedIn: [ConflictChain Consortium](https://www.linkedin.com/company/conflictchain)  
+Twitter: [@ConflictChain](https://twitter.com/ConflictChain)  
