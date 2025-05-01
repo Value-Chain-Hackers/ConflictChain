@@ -1,0 +1,184 @@
+---
+title: "SupplyLens"
+subtitle: "AI-Enhanced Supply Chain Transparency"
+author: "ConflictChain Consortium"
+format:
+  revealjs:
+    slide-number: true
+    logo: images/supplylens-logo.png
+    css: styles.css
+    chalkboard:
+      buttons: false
+    transition: slide
+    theme: simple
+    preview-links: auto
+    footer: '[https://supplylens.org](https://supplylens.org)'
+---
+
+## 🌍 The Problem
+
+> “Where do your materials actually come from?”
+
+- 80% of supply chains are opaque past Tier 1  
+- ESG regulations demand visibility across **all tiers**  
+- Most tools stop where real risks begin: the first mile
+
+**SupplyLens** changes that.
+
+---
+
+## 🔍 What is SupplyLens?
+
+**SupplyLens** is an open-source AI platform to:
+
+- Map complex, multi-tier supply chains
+- Infer missing relationships using LLMs
+- Store everything in a unified graph database
+- Query risks and connections in natural language
+
+> _"From chaos to clarity, using reasoning not just reporting."_
+
+---
+
+## ⚙️ How It Works
+
+::: columns
+::: {.column width="50%"}
+**Tools:**
+- Crawl4AI / Custom Ingestion
+- PostgreSQL + Apache AGE
+- pgvector + JSONB
+- LangChain + Ollama
+:::
+
+::: {.column width="50%"}
+**Layers:**
+1. Input: Reports, documents, web data  
+2. AI: Extract + infer nodes & edges  
+3. Graph DB: Store structure & semantics  
+4. UI: Ask questions, see the logic
+:::
+:::
+
+---
+
+## 📈 Architecture
+
+```mermaid
+flowchart TD
+  subgraph Input
+    A[Crawl4AI]
+    B[Trade docs]
+    C[ESG reports]
+  end
+  subgraph AI
+    D[LLM Reasoning]
+    E[Semantic Triples]
+    F[pgvector Embeddings]
+  end
+  subgraph Storage
+    G[PostgreSQL]
+    H[Apache AGE]
+    I[JSONB Metadata]
+  end
+  subgraph Query
+    J[LangChain]
+    K[Open WebUI]
+  end
+  A --> D
+  B --> D
+  C --> D
+  D --> E
+  E --> H
+  F --> J
+  H --> J
+  I --> J
+  J --> K
+```
+
+---
+
+## 🧠 Are You Sure?
+
+**EU Laws Require This:**
+
+- **CSRD**: ~50,000 firms must report full ESG data  
+- **CSDDD (CS3D)**: Due diligence past Tier 1 becomes law
+
+**Research-Backed:**
+
+- LLM + Knowledge Graph = 3x visibility increase  
+  _(Cambridge, 2024 EV study)_
+
+**Data-Ready:**
+
+- WikiRate: 7M+ ESG datapoints  
+- Open Supply Hub: 100k+ mapped facilities
+
+---
+
+## 🛠️ Can You Do It?
+
+**Yes — we’re building it now:**
+
+- ✅ Stack: PostgreSQL + AGE + pgvector + LangChain
+- ✅ Auth via Supabase, UI via OpenWebUI
+- ✅ Automated workflows via n8n
+- ✅ Hosted on Proxmox VM with Docker Compose profiles
+- ✅ TLS & subpath routing via HAProxy
+
+**Deployment Site:**  
+https://aisandbox1.ixworx.nl
+
+---
+
+## 🙋 What Do You Want?
+
+We’re looking for:
+
+- 🏢 Supply chain teams to run real pilots  
+- 🎓 Academic partners for ESG traceability research  
+- 💸 Grantmakers and investors to scale infrastructure  
+- 🌍 NGO and EU actors for documentation standards
+
+> _Let's build trust at every step of the chain._
+
+---
+
+## 👥 Team
+
+::: columns
+::: {.column width="33%"}
+**Christiaan Verhoef**  
+Vision & Business  
+[LinkedIn](https://www.linkedin.com/in/christiaanverhoef/)
+:::
+::: {.column width="33%"}
+**Torsten Raudssus**  
+AI Engineering  
+[LinkedIn](https://www.linkedin.com/in/raudssus/)
+:::
+::: {.column width="33%"}
+**Prof. Michiel Steeman**  
+Strategic Support  
+[LinkedIn](https://www.linkedin.com/in/michielsteeman/)
+:::
+:::
+
+---
+
+## 📬 Contact
+
+- 🌐 [supplylens.org](https://supplylens.org)  
+- ✉️ info@supplylens.org  
+- 💬 GitHub Discussions (coming soon)
+
+---
+
+## 🔚 Thank You
+
+> _SupplyLens makes supply chains visible, verifiable, and fair._
+
+Press `S` for speaker notes  
+Press `F` for full screen  
+Use arrow keys or swipe to navigate

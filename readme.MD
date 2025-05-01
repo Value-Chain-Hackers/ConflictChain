@@ -1,7 +1,118 @@
 Wat is het project 
+
+Supplylens is a open source tool to map out the reality of supplychains using the factors of Finance, movement of goods and information about that to give an more accrate scope of the world of today.
+Instead of relying only on information that can be found, SupplyLens uses A.I to Reason and Predict the missing data of supplychains. 
+By using Forensic methododology and Reasonmatic Reasoning, we can find the connections that are hidden in supplychains.
+
 Wat is de huidige status
+We are back to the drawing board, We are rebuilding the architectural design from the ground up, now with a more rigerous development process.
+
 Wat dingen die bereikt zijn 
+We have now, a more realistic setup on how to get towards the end goal, we have had our first failures and learned a lot from them.
+We have determined that this is hard, but that there is significant demand for this program.
+
 Wat moet er nog gebeuren
+We need to get new approval, build a new prototype, Gather new funding.
+
+
+# SupplyLens
+
+**SupplyLens** is an open-source platform designed to reveal the true structure of global supply chains by combining finance, logistics, and documentation into one unified system. It goes beyond traditional data aggregation by applying **AI-powered reasoning** to infer, connect, and predict relationships between entities—even when direct information is missing.
+
+---
+
+## 🔍 What is SupplyLens?
+
+Modern supply chains are fragmented, obscured, and often incomplete—especially at the start of the chain, where ethical and environmental risks are highest.
+
+**SupplyLens** provides a new way to map that reality. Using a combination of:
+
+- **AI-driven natural language processing**
+- **Graph-based modeling of supplier relationships**
+- **Forensic reasoning to reconstruct missing links**
+
+…it creates dynamic, explorable knowledge graphs of supply chains, allowing researchers, compliance officers, and auditors to identify blind spots and dependencies.
+
+---
+
+## 🧠 How It Works
+
+SupplyLens combines several layers of open tools into one integrated system:
+
+1. **📥 Data Collection**  
+   - Crawl ESG reports, trade documents, web sources  
+   - Extract entities: companies, facilities, regions, certifications
+
+2. **🧠 AI Reasoning & Prediction**  
+   - Use LLMs (e.g. GPT, Ollama) to interpret and generate semantic links  
+   - Apply **reasonmatic reasoning** to infer unseen connections  
+   - Score confidence and risk on inferred links
+
+3. **🔗 Graph Database Storage**  
+   - PostgreSQL + Apache AGE to structure the supply graph  
+   - pgvector for semantic similarity searches  
+   - JSONB for detailed metadata (ESG, location, tier, etc.)
+
+4. **❓ Query Interface**  
+   - Ask natural-language questions via LangChain or OpenWebUI  
+   - Get back insights, explanations, and visualizations
+
+---
+
+## 🌐 Why SupplyLens?
+
+Most supply chain tools rely only on what can be explicitly reported or found in databases.  
+**SupplyLens introduces a forensic approach**—reconstructing supply chains like crime scenes, using probability, logic, and AI to fill in the blanks.
+
+This makes it useful for:
+- ESG & CSRD compliance
+- Investigative journalism
+- NGO transparency campaigns
+- Research into trade networks and hidden dependencies
+
+---
+
+## 👥 Team
+
+- **Christiaan Verhoef** – Business Developer & Visionary  
+  [linkedin.com/in/christiaanverhoef](https://www.linkedin.com/in/christiaanverhoef/)
+- **Torsten Raudssus** – AI Engineer  
+  [linkedin.com/in/raudssus](https://www.linkedin.com/in/raudssus/)
+- **Prof. Michiel Steeman** – Strategic Support, Supply Chain Finance  
+  [linkedin.com/in/michielsteeman](https://www.linkedin.com/in/michielsteeman/)
+
+---
+
+## 🧪 Status
+
+This project is in early development.  
+We are currently:
+
+- Finalizing the data pipeline architecture (graph + embeddings)
+- Setting up pilot infrastructure with Docker-based deployment
+- Integrating the reasoning engine into PostgreSQL using Apache AGE and LangChain
+- Preparing public demo environments and pilot use cases
+
+---
+
+## 👐 Get Involved
+
+We’re actively seeking:
+
+- Developers with interest in AI, graphs, NLP or supply chain data  
+- Academic partners to use or test SupplyLens in real-world research  
+- NGOs and journalists to help guide the ethical and forensic applications  
+- Funding partners for open-source development, documentation, and outreach
+
+If you'd like to get involved, open an issue or contact us directly at:
+
+📧 info@supplylens.xyz
+
+---
+
+## 📄 License
+
+This project is open-source under the **MIT License**. See [LICENSE](LICENSE) for details.
 
 
 
