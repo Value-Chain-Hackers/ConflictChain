@@ -6,7 +6,7 @@
 <script src="Supplylens_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="Supplylens_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="Supplylens_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="Supplylens_files/libs/quarto-html/quarto-syntax-highlighting-0815c480559380816a4d1ea211a47e91.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="Supplylens_files/libs/quarto-html/quarto-syntax-highlighting-dark-748b535e376f14d4692bf2b2e5fd6380.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.29">
 
   <meta name="author" content="ConflictChain Consortium">
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="Supplylens_files/libs/revealjs/dist/theme/quarto-2c1b5f745a11cfad616ebade4a4a7d24.css">
+  <link rel="stylesheet" href="Supplylens_files/libs/revealjs/dist/theme/quarto-0c8acc74dca0c2faaedea4940f202713.css">
   <link rel="stylesheet" href="styles.css">
   <link href="Supplylens_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="Supplylens_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
@@ -128,7 +128,7 @@
   <script src="Supplylens_files/libs/quarto-diagram/mermaid-init.js"></script>
   <link href="Supplylens_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
@@ -145,139 +145,338 @@ ConflictChain Consortium
 </div>
 
 </section>
-<section id="the-problem" class="slide level2">
-<h2>🌍 The Problem</h2>
-<blockquote>
-<p>“Where do your materials actually come from?”</p>
-</blockquote>
-<ul>
-<li>80% of supply chains are opaque past Tier 1;<br>
-</li>
-<li>ESG regulations demand visibility across <strong>all tiers</strong><br>
-</li>
-<li>Most tools stop where real risks begin: the first mile</li>
-</ul>
-<p><strong>SupplyLens</strong> changes that.</p>
-</section>
-<section id="what-is-supplylens" class="slide level2">
-<h2>🔍 What is SupplyLens?</h2>
-<p><strong>SupplyLens</strong> is an open-source AI platform to:</p>
-<ul>
-<li>Map complex, multi-tier supply chains<br>
-</li>
-<li>Infer missing relationships using LLMs<br>
-</li>
-<li>Store everything in a unified graph database<br>
-</li>
-<li>Query risks and connections in natural language</li>
-</ul>
-<blockquote>
-<p><em>“From chaos to clarity, using reasoning not just reporting.”</em></p>
-</blockquote>
-</section>
-<section id="how-it-works" class="slide level2">
-<h2>⚙️ How It Works</h2>
+<section id="volkswagen-and-the-hidden-cost-of-batteries" class="slide level2">
+<h2>Volkswagen and the Hidden Cost of Batteries</h2>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Tools:</strong> - Crawl4AI / Custom Ingestion<br>
-- PostgreSQL + Apache AGE<br>
-- pgvector + JSONB<br>
-- LangChain + Ollama</p>
-</div><div class="column" style="width:50%;">
-<p><strong>Layers:</strong> 1. Input: Reports, documents, web data<br>
-2. AI: Extract + infer nodes &amp; edges<br>
-3. Graph DB: Store structure &amp; semantics<br>
-4. UI: Ask questions, see the logic</p>
+<div class="column" style="font-size: 0.60em;">
+<p>In 2019, <strong>Volkswagen</strong> committed to making electric vehicles more sustainable.<br>
+They published ESG reports, used certified suppliers, and pledged clean sourcing.</p>
+<p>But a 2020 investigation by <strong>Amnesty International</strong> found:</p>
+<ul>
+<li>❗ Cobalt in VW’s batteries traced to <strong>mines in the DRC</strong><br>
+</li>
+<li>❗ These mines used <strong>child labor and unsafe conditions</strong><br>
+</li>
+<li>❗ The violations were <strong>several tiers deep</strong> — invisible to VW’s standard audits</li>
+</ul>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>🔶 <strong>Tier 1 looked clean.</strong><br>
+All certifications were in place.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🔴 <strong>Tier 3 was the problem.</strong><br>
+Child labor and unsafe mines were hidden beneath the audit trail.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>“The certification meant nothing.<br>
+We didn’t see where the real risk was.”<br>
+Internal source, Amnesty report (2020) —</p>
+</blockquote>
+<p><strong>Source:</strong><br>
+Amnesty International, <em>“Powering Change: The supply chains behind clean cars”</em> (2020)<br>
+<a href="https://www.amnesty.org/en/documents/afr62/7395/2017/en/">https://www.amnesty.org/en/documents/afr62/7395/2017/en/</a></p>
 </div></div>
 </section>
-<section id="architecture" class="slide level2">
-<h2>📈 Architecture</h2>
+<section id="nestlé-and-the-hidden-cost-of-palm-oil" class="slide level2">
+<h2>Nestlé and the Hidden Cost of Palm Oil</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.60em;">
+<p>In 2020, <strong>Nestlé</strong> pledged to eliminate deforestation from its supply chains and committed to sourcing sustainable palm oil.</p>
+<p>However, investigations revealed:</p>
+<ul>
+<li>❗ Nestlé continued sourcing palm oil from mills linked to deforestation and human rights abuses.</li>
+<li>❗ Satellite monitoring detected over 1,000 deforestation alerts per day near Nestlé’s palm oil suppliers.</li>
+<li>❗ Reports indicated worker deaths, injuries, and land rights violations associated with some of Nestlé’s palm oil sources.</li>
+</ul>
+<p>Despite public commitments, these issues persisted in Nestlé’s supply chain.</p>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>🔶 <strong>Public Commitments vs.&nbsp;Reality</strong><br>
+Nestlé’s sustainability pledges did not align with on-the-ground practices.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🔴 <strong>Ongoing Deforestation</strong><br>
+Continuous forest clearing was detected near supplier mills.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>❌ <strong>Human Rights Concerns</strong><br>
+Allegations included worker exploitation and land rights violations.</p>
+</blockquote>
+<hr>
+<p><strong>Sources:</strong></p>
+<ul>
+<li>Palm Oil Detectives, <em>Nestlé</em>, 2021. <a href="https://palmoildetectives.com/2021/02/09/nestle/">Link</a></li>
+<li>SwissInfo, <em>Nestlé identifies over 1,000 deforestation alerts per day</em>, 2020.</li>
+</ul>
+</div></div>
+</section>
+<section id="kfcs-great-chicken-shortage-of-2018" class="slide level2">
+<h2>🍗 KFC’s Great Chicken Shortage of 2018</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.60em;">
+<p>In February 2018, <strong>KFC UK</strong> faced an unexpected crisis: <strong>a chicken shortage</strong>. The fast-food chain had recently switched its logistics partner from Bidvest, which operated a network of six warehouses, to DHL, which centralized operations to a single warehouse in Rugby.</p>
+<p>This strategic change led to:</p>
+<ul>
+<li>❗ Over 750 KFC outlets across the UK and Ireland temporarily closing due to delivery failures.</li>
+<li>❗ Significant food waste and financial losses.</li>
+<li>❗ Public relations challenges, as customers expressed frustration over the lack of chicken.</li>
+</ul>
+<p>The incident highlighted the risks of over-centralization and inadequate contingency planning in supply chain management.</p>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>🔶 <strong>Centralized Logistics Failure</strong><br>
+Transitioning to a single warehouse created a single point of failure.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🔴 <strong>Operational Disruptions</strong><br>
+Delivery issues led to widespread store closures and supply shortages.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>❌ <strong>Brand Reputation Impact</strong><br>
+The shortage became a national news story, affecting customer trust.</p>
+</blockquote>
+<hr>
+<p><strong>Source:</strong><br>
+Wired, <em>“The inside story of the great KFC chicken shortage of 2018”</em> (2018)<br>
+<a href="https://www.wired.com/story/kfc-chicken-crisis-shortage-supply-chain-logistics-experts">https://www.wired.com/story/kfc-chicken-crisis-shortage-supply-chain-logistics-experts</a></p>
+</div></div>
+</section>
+<section id="you-cant-fix-what-you-cant-see" class="slide level2">
+<h2>❗ You Can’t Fix What You Can’t See</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.7em;">
+<ul>
+<li><p><strong>94%</strong> of companies have <strong>no visibility beyond Tier 1</strong><br>
+<em>– Deloitte, 2022</em></p></li>
+<li><p><strong>Up to 90%</strong> of ESG violations happen where data disappears**<br>
+<em>– McKinsey, 2021</em></p></li>
+<li><p><strong>CSRD, CS3D, EUDR</strong> demand real due diligence<br>
+– Risk mapping<br>
+– Documented origin<br>
+– Verified suppliers</p></li>
+</ul>
+</div><div class="column" style="width:50%;">
 <div class="cell" data-reveal="true" data-layout-align="default">
 <div class="cell-output-display">
 <div>
 <p></p><figure class=""><p></p>
 <div>
-<pre class="mermaid mermaid-js">flowchart TD
-
-  subgraph Input_Layer[Input Layer: Data Collection]
-    A1[Web Crawler or Crawl4AI]
-    A2[PDFs and ESG Reports]
-    A3[Open Datasets (WikiRate, OS Hub)]
-  end
-
-  subgraph AI_Layer[AI Reasoning and Embeddings]
-    B1[LLM (Ollama or GPT)]
-    B2[Triple Extraction: Subject → Predicate → Object]
-    B3[pgvector Embeddings]
-  end
-
-  subgraph Graph_Storage[Unified Graph Database]
-    C1[PostgreSQL Backend]
-    C2[Apache AGE for Graph Structure]
-    C3[pgvector for Similarity Search]
-    C4[JSONB Metadata: ESG Scores, Confidence, Sources]
-  end
-
-  subgraph Query_Interface[Natural Language Interface]
-    D1[LangChain or LlamaIndex]
-    D2[Chat UI: OpenWebUI or Chainlit]
-    D3[n8n: Query Routing and Automation]
-  end
-
-  subgraph Infrastructure[Deployment and Control]
-    E1[Docker Compose with Profiles]
-    E2[HAProxy or Caddy - TLS + Routing]
-    E3[Supabase - Auth and Secure Storage]
-    E4[Obsidian - Academic Notes Integration]
-  end
-
-  %% Connections
-  A1 --&gt; B1
-  A2 --&gt; B1
-  A3 --&gt; B1
-
-  B1 --&gt; B2
-  B2 --&gt; C2
-  B3 --&gt; C3
-
-  C1 --&gt; C2
-  C2 --&gt; D1
-  C3 --&gt; D1
-  C4 --&gt; D1
-
-  D1 --&gt; D2
-  D2 --&gt; D3
-
-  E1 --&gt; C1
-  E2 --&gt; D2
-  E3 --&gt; D2
-  E4 --&gt; B1
+<pre class="mermaid mermaid-js">flowchart TB
+  A[Your Company] --&gt; B[Supplier]
+  B --&gt; C[Unknown Subsupplier]
+  C --&gt; D[???]
+  D --&gt; E[Origin: Lithium Mine, Congo]
+ 
 </pre>
 </div>
 <p></p></figure><p></p>
 </div>
 </div>
 </div>
+</div></div>
+<div class="footer">
+<p>⚠️ This is why greenwashing happens.<br>
+⚠️ This is why compliance fails.<br>
+⚠️ This is why we built SupplyLens.</p>
+</div>
+<div class="footer">
+<p>“Without deep visibility, ESG reporting becomes paperwork theatre.”<br>
+– SupplyLens</p>
+</div>
+</section>
+<section id="why-nobody-wants-to-share" class="slide level2">
+<h2>🤫 Why Nobody Wants to Share</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.50em;">
+<p>Supply chains don’t just suffer from a lack of data.</p>
+<p>They suffer from <strong>a lack of trust</strong> — and <strong>incentives to hide</strong>.</p>
+<p>Every player has a reason to stay quiet:</p>
+<ul>
+<li>📦 Tier 1 suppliers don’t want to admit they outsource to Tier 2.</li>
+<li>🌍 Exporters won’t reveal source farms — they fear being cut out.</li>
+<li>🏢 Traders obscure price breakdowns to protect margins.</li>
+<li>🛠 Manufacturers worry about audits, and buyers asking questions.</li>
+</ul>
+<blockquote>
+<p>If you ask for documents, many will send you PDFs.<br>
+If you ask where the data came from, the conversation ends.</p>
+</blockquote>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>💰 <strong>Opacity is profitable.</strong><br>
+Hiding intermediaries = higher markup.<br>
+Faking compliance = cheaper business.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🧨 <strong>Transparency is risky.</strong><br>
+Disclosing weak links = losing contracts or getting fined.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🤷 <strong>There’s no shared map.</strong><br>
+So bad actors win by default —<br>
+because they can <strong>pretend</strong> better than they can prove.</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>If we want ethical trade,<br>
+then we need to make <strong>truth a competitive advantage</strong>.</p>
+</blockquote>
+</div></div>
+</section>
+<section id="what-would-a-real-solution-look-like" class="slide level2">
+<h2>🧩 What Would a Real Solution Look Like?</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.50em;">
+<p>If the playing field rewards <strong>hiding</strong>, then honesty becomes a <strong>disadvantage</strong>.</p>
+<p>So a real solution doesn’t just collect data —<br>
+it shifts the <strong>incentives</strong> in the system.</p>
+<p>It must:</p>
+<ul>
+<li>🧭 Make <strong>visibility a strength</strong>, not a risk</li>
+<li>🛠 Work without forcing new tools on small players</li>
+<li>🧠 Reason across <strong>missing or fuzzy data</strong></li>
+<li>🔍 Show how companies connect — not just who they are</li>
+<li>🧾 Make it easier to <strong>prove the truth</strong> than to fake it</li>
+</ul>
+<p>In short:</p>
+<blockquote>
+<p>🧱 It’s not about reporting tools.<br>
+It’s about building a new type of evidence.</p>
+</blockquote>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>🧠 <strong>Understands context and gaps</strong><br>
+“Sourced through ChinaCorp” ≠ “Sourced from ChinaCorp”</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🔗 <strong>Reveals hidden structures</strong><br>
+Not just documents — relationships</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🧩 <strong>Integrates finance, movement, and meaning</strong><br>
+Supply chains are physical, economic, and narrative systems</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>✅ <strong>Gives good actors a chance to win</strong><br>
+If you can prove it, you can compete</p>
+</blockquote>
+</div></div>
+</section>
+<section id="introducing-supplylens" class="slide level2">
+<h2>🔍 Introducing SupplyLens</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.50em;">
+<p><strong>SupplyLens</strong> is an open-source tool that helps you map the <strong>reality</strong> of supply chains —<br>
+even when the data is fragmented, hidden, or manipulated.</p>
+<p>It doesn’t just store documents.<br>
+It <strong>reasons</strong> across them.</p>
+<p>It combines:</p>
+<ul>
+<li>📥 Smart data ingestion (from PDFs, websites, leaks, forms)</li>
+<li>🧠 LLM-based reasoning to extract relationships and meaning</li>
+<li>🔗 Graph database structure to reflect how supply chains actually behave</li>
+<li>🔍 Semantic search and risk detection, even when things aren’t said explicitly</li>
+</ul>
+<p>And it works with the world as it is —<br>
+Not as we wish it were.</p>
+</div><div class="column" style="font-size: 0.50em;">
+<blockquote>
+<p>📊 <strong>Built on PostgreSQL + Apache AGE + pgvector</strong><br>
+One schema, no microservice chaos</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>💬 <strong>Natural language interface</strong><br>
+“Where is EasyFiets’ lithium most likely from?”</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🧠 <strong>AI + graph logic = supply chain insight</strong><br>
+It thinks through the chain — not just shows it</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>🛠 Designed for:<br>
+- Researchers<br>
+- Universities<br>
+- ESG teams<br>
+- Investigative journalists<br>
+- Supply chain innovators</p>
+</blockquote>
+</div></div>
+</section>
+<section id="how-supplylens-works" class="slide level2">
+<h2>🧠 How SupplyLens Works</h2>
+<div class="columns">
+<div class="column" style="font-size: 0.50em;">
+<p><strong>SupplyLens</strong> processes messy, fragmented data — and makes meaning from it.</p>
+<p>It takes in:</p>
+<ul>
+<li>📄 PDFs, websites, spreadsheets, or scans<br>
+</li>
+<li>🔍 NGO reports, invoices, product catalogs<br>
+</li>
+<li>🗂 Structured or unstructured documents</li>
+</ul>
+<p>Then it:</p>
+<ul>
+<li>🧠 Extracts entities, relationships, and sources<br>
+</li>
+<li>🔗 Builds a graph of companies, flows, risks, and gaps<br>
+</li>
+<li>🧾 Annotates each node with metadata, ESG claims, and evidence<br>
+</li>
+<li>🧭 Uses AI to infer missing links or weak spots<br>
+</li>
+<li>💬 Responds to natural language questions about the chain</li>
+</ul>
+<p>You don’t need 100’s of records. You don’t need a data team.<br>
+You just need a question — and SupplyLens will <strong>trace the answer</strong>.</p>
+</div><div class="column" style="width:45%;">
+<p><img data-src="Images/SupplyLens.jpeg" style="width:100.0%"></p>
+</div></div>
 </section>
 <section id="are-you-sure" class="slide level2">
 <h2>🧠 Are You Sure?</h2>
-<p><strong>EU Laws Require This:</strong></p>
+<div class="columns">
+<div class="column" style="font-size: 0.45em;">
+<p><strong>📜 EU Laws Require This</strong></p>
 <ul>
-<li><strong>CSRD</strong>: ~50,000 firms must report full ESG data<br>
-</li>
-<li><strong>CSDDD (CS3D)</strong>: Due diligence past Tier 1 becomes law</li>
+<li><p><strong>CSRD</strong>: ~50,000 EU-based firms must report on full ESG impacts<br>
+→ <em>Corporate Sustainability Reporting Directive, 2023</em><br>
+<a href="https://normative.io/insight/csrd-explained">normative.io › CSRD Explained</a></p></li>
+<li><p><strong>CSDDD (CS3D)</strong>: Human rights &amp; environmental due diligence must go <strong>beyond Tier 1</strong><br>
+→ <em>EU Corporate Sustainability Due Diligence Directive, April 2024</em><br>
+<a href="https://www.morganlewis.com/pubs/2024/04/corporate-due-diligence-eu-supply-chain-directive-adopted-against-all-odds">morganlewis.com › CSDDD Adopted</a></p></li>
 </ul>
-<p><strong>Research-Backed:</strong></p>
+<p><strong>📊 Research-Backed</strong></p>
 <ul>
-<li>LLM + Knowledge Graph = 3x visibility increase<br>
-<em>(Cambridge, 2024 EV study)</em></li>
+<li>LLM + Knowledge Graphs improve traceability without direct supplier input<br>
+→ <em>“Supply Chain Mapping with LLMs and Graph AI” (2024 preprint)</em><br>
+<a href="https://arxiv.org/html/2408.07705v1">arxiv.org › 2408.07705v1</a></li>
 </ul>
-<p><strong>Data-Ready:</strong></p>
+<p><strong>🗂️ Data-Ready</strong></p>
 <ul>
-<li>WikiRate: 7M+ ESG datapoints<br>
-</li>
-<li>Open Supply Hub: 100k+ mapped facilities</li>
+<li><p><strong>WikiRate</strong>: 7M+ ESG datapoints from 145k+ companies<br>
+<a href="https://wikirate.org">wikirate.org</a></p></li>
+<li><p><strong>Open Supply Hub</strong>: 100k+ mapped facilities &amp; contributors<br>
+<a href="https://opensupplyhub.org">opensupplyhub.org</a></p></li>
 </ul>
+</div><div class="column" style="width:45%;">
+<p><img data-src="Images/ReportingStandards.png" style="width:100.0%"> <img data-src="Images/CorpSustainability.webp" style="width:100.0%"></p>
+</div></div>
 </section>
 <section id="can-you-do-it" class="slide level2">
 <h2>🛠️ Can You Do It?</h2>
@@ -340,7 +539,7 @@ Strategic Support<br>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="images/supplylens-logo.png" class="slide-logo"></p>
+<p><img src="./Images/supplylens-logo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="https://supplylens.org">https://supplylens.org</a></p>
 </div>
